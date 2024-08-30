@@ -1,0 +1,9 @@
+<div class="nested-fields flex items-center space-x-2">
+  <div class="flex-grow">
+    <%= f.text_field :name, placeholder: "Ingredient name", class: "block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" %>
+  </div>
+  <div class="w-1/3">
+    <%= f.text_field :quantity, placeholder: "Quantity", class: "block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" %>
+  </div>
+  <%= link_to_remove_association "Remove", f, class: "inline-flex items-center px-2 py-1 border border-transparent text-sm font-medium rounded-md text-red-700 bg-red-100 hover:bg-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500" %>
+</div>
